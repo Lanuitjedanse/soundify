@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Spotify Search</title>
+    </head>
+    <body>
+        <div class="logo">
+            <img
+                src="Soundify.png"
+                alt="Spotify and soundcloud logo"
+                class="soundify"
+            />
+        </div>
+        <div class="brand">
+            <h1>Soundify</h1>
+        </div>
+
+        <div class="search-fields">
+            <div class="box-bar">
+                <input type="text" placeholder="Search" />
+                <select>
+                    <option value="artist">Artist</option>
+                    <option value="album">Album</option>
+                </select>
+                <button class="submit-button">Submit</button>
+            </div>
+        </div>
+        <div class="result-message-container">
+            <div class="no-result">No result</div>
+            <div class="result-message">
+                <p>
+                    <span class="result-number"></span> result(s) for
+                    <span class="result-name"></span>
+                </p>
+            </div>
+        </div>
+
+        <div class="main-results-container"></div>
+        <div class="btn-more-container">
+            <button class="more">more</button>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
